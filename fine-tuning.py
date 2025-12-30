@@ -182,8 +182,8 @@ trainer = SFTTrainer(
         save_steps = 100,  # 저장: 100 스텝마다 체크포인트 저장
         save_total_limit = 3,  # 최대 체크포인트 수: 디스크 공간 절약
         report_to = "none",  # WandB 등 사용 시 "wandb"로 변경
-        fp16 = True,  # FP16: 메모리 절약 및 학습 속도 향상
-        bf16 = False,  # BF16: A100 등에서 사용 가능 (fp16보다 안정적)
+        fp16 = False,  # FP16: 메모리 절약 및 학습 속도 향상
+        bf16 = True,  # BF16: A100 등에서 사용 가능 (fp16보다 안정적)
     ),
 )
 
